@@ -4,12 +4,7 @@
   <body>
     <NavBar></NavBar>
     <div>
-      
-      
-      <p>hola mundo
-      <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      </p>
+      <OptionsContainer></OptionsContainer>
     </div>
     <FooterPage></FooterPage>
   </body>
@@ -21,12 +16,14 @@ import { defineComponent } from 'vue';
 import NavBar from './components/NavBar.vue';
 import FooterPage from './components/FooterPage.vue';
 import MainScreen from './components/MainScreen.vue';
+import OptionsContainer from './components/OptionsContainer.vue';
 export default defineComponent({
   name: 'App',
   components: {
     NavBar,
     FooterPage,
-    MainScreen
+    MainScreen,
+    OptionsContainer
   }
 });
 </script>
