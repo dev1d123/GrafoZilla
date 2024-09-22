@@ -1,17 +1,7 @@
 <template>
-  <!--FIRST PAGE, the welcome...-->
-  
-  <MainScreen></MainScreen>
-
-  <body>
-    <NavBar></NavBar>
-    <div>
-      <!--<OptionsContainer></OptionsContainer>-->
-      <SpecificOption></SpecificOption>
-    </div>
-    <FooterPage></FooterPage>
-  </body>
-  <!--SECOND PAGE, the selector...-->
+  <div class="body">
+      <GraphMain></GraphMain>
+  </div>
 </template>
 
 <script lang="ts">
@@ -21,14 +11,11 @@ import FooterPage from './components/FooterPage.vue';
 import MainScreen from './components/MainScreen.vue';
 //import OptionsContainer from './components/OptionsContainer.vue';
 import SpecificOption from './components/SpecificOption.vue';
+import GraphMain from './components/GraphMain.vue';
 export default defineComponent({
   name: 'App',
   components: {
-    NavBar,
-    FooterPage,
-    MainScreen,
-    SpecificOption,
-    //OptionsContainer
+    GraphMain,
   }
 });
 </script>
