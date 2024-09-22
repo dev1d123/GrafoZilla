@@ -83,6 +83,138 @@
 </script>
 
 <style scoped>
+.container {
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(135deg, #e0f7fa, #e1bee7);
+
+}
+
+.actions, .options-button{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+.actions button{
+  width: 100px;
+}
+
+.options-check{
+  background-color: rgb(250, 193, 193);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.options, .adittional {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.actions button, .options button, .adittional button {
+  padding: 10px;
+  background-color: #97c6f9;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.actions button:hover, .options button:hover, .adittional button:hover {
+  background-color: #003c7c;
+  color: white;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.options label {
+  margin-bottom: 5px;
+}
+
+.algorithm select {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.moreoptios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container > div {
+  flex: 1;
+}
+
+
+.options-check {
+  display: flex;
+  gap: 10px;
+}
+
+.options-check input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  outline: none;
+  transition: background 0.3s ease, transform 0.2s;
+  cursor: pointer;
+}
+
+.options-check input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+  transform: scale(1.1);
+}
+
+.options-check input[type="checkbox"]:checked::before {
+  content: '✔';
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.options-check label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.options-check input[type="checkbox"]:hover + label {
+  color: #4CAF50;
+}
 
 
 </style>
