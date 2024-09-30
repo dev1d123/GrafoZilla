@@ -84,7 +84,7 @@
 
 <style scoped>
 .container {
-  max-width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -94,7 +94,7 @@
   gap: 20px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: linear-gradient(135deg, #e0f7fa, #e1bee7);
-
+  overflow: auto;
 }
 
 .actions, .options-button{
