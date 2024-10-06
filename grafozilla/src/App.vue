@@ -1,11 +1,6 @@
 <template>
-  <div class="body">
-  </div>
-  <nav>
-    <router-link to="/">Home</router-link>
-    <br>
-    <router-link to="/works">Graph</router-link>
-  </nav>
+  <div class="body"> </div>
+
   <router-view></router-view>
 </template>
 

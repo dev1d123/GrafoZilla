@@ -4,12 +4,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSearch, faSliders, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
 
-import HomeApp from './components/HomeApp.vue'
+import HomeView from './views/HomeView.vue'
 import GraphMain from './components/GraphMain.vue'
 
 
 const routes = [
-    { path: '/', component: HomeApp},
+    { path: '/', component: HomeView},
     { path: '/works', component: GraphMain},
 ]
 
