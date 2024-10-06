@@ -1,4 +1,5 @@
 <template>
+  
     <div class="title">Linear Data Structures</div>
     <div class="options-container">
       <OptionDetail 

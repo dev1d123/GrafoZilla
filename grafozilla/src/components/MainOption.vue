@@ -1,6 +1,6 @@
 <template>
     <div class="main-option">
-      <div class="circle" @mouseover="showDescription = true" @mouseleave="showDescription = false">
+      <div class="circle" @mouseover="showDescription = true" @mouseleave="showDescription = false" @click="emitOptionSelected(optionValue)">
         <img :src="imageUrl" alt="Imagen" class="circle-image">
         <div v-if="showDescription" class="description">
           <h3>{{ title }}</h3>
@@ -30,8 +30,17 @@
         type: Array as PropType<string[]>,
         required: true,
       },
+      optionValue: {
+        type: Number as PropType<number>,
+        required: true,
+      },
     },
-    data() {
+    methods: {
+      emitOptionSelected(value: number) {
+        this.$emit('selectOption', value);
+      },
+    },
+      data() {
       return {
         showDescription: false,
       };
